@@ -3,6 +3,8 @@ div[class^="category-title-header"] {
   text-align: center;
   width: 100%;
   justify-content: center;
+  background: var(--category-background-color);
+  color: var(--category-text-color);
 
   .category-title-contents {
     max-width: 500px;
@@ -40,8 +42,9 @@ div[class^="category-title-header"] {
   }
 }
 
-.category-header {
-  #main-outlet {
-    padding-top: 20px;
+// remove core category headers to avoid duplication
+.list-controls {
+  .category-heading {
+    display: none;
   }
 }
